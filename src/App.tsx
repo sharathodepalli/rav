@@ -1,15 +1,15 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Layout } from './components/layout/Layout';
-import { HomePage } from './pages/HomePage';
-import { DevelopersPage } from './pages/DevelopersPage';
-import { InnovatorsPage } from './pages/InnovatorsPage';
-import { AboutPage } from './pages/AboutPage';
-import { ContactPage } from './pages/ContactPage';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Layout } from "./components/layout/Layout";
+import { HomePage } from "./pages/HomePage";
+import { DevelopersPage } from "./pages/DevelopersPage";
+import { InnovatorsPage } from "./pages/InnovatorsPage";
+import { AboutPage } from "./pages/AboutPage";
+import { ContactPage } from "./pages/ContactPage";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/rav">
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
