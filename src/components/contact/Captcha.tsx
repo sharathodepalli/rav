@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 interface CaptchaProps {
   value: string;
@@ -7,7 +7,7 @@ interface CaptchaProps {
 }
 
 export function Captcha({ value, onChange, error }: CaptchaProps) {
-  const [challenge, setChallenge] = useState('');
+  const [challenge, setChallenge] = useState("");
 
   const generateChallenge = () => {
     const num1 = Math.floor(Math.random() * 10);

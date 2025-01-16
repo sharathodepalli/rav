@@ -1,28 +1,36 @@
-import React from 'react';
-import { Input } from '@/components/ui/Input';
-import { TextArea } from '@/components/ui/TextArea';
-import { Select } from '@/components/ui/Select';
-import { Button } from '@/components/ui/Button';
-import { FormStatus } from '@/components/ui/FormStatus';
-import { useEmailForm } from '@/hooks/useEmailForm';
+import React from "react";
+import { Input } from "@/components/ui/Input";
+import { TextArea } from "@/components/ui/TextArea";
+import { Select } from "@/components/ui/Select";
+import { Button } from "@/components/ui/Button";
+import { FormStatus } from "@/components/ui/FormStatus";
+import { useEmailForm } from "@/hooks/useEmailForm";
 
 const INQUIRY_TYPES = [
-  { value: '', label: 'Select reason for contact' },
-  { value: 'project', label: 'Project Inquiry' },
-  { value: 'partnership', label: 'Partnership Opportunity' },
-  { value: 'support', label: 'Technical Support' },
-  { value: 'other', label: 'Other' }
+  { value: "", label: "Select reason for contact" },
+  { value: "project", label: "Project Inquiry" },
+  { value: "partnership", label: "Partnership Opportunity" },
+  { value: "support", label: "Technical Support" },
+  { value: "other", label: "Other" },
 ];
 
 export function ContactForm() {
-  const { values, errors, isLoading, status, handleChange, handleSubmit } = useEmailForm({
-    formType: 'contact',
+  const {
+    values,
+    errors,
+    generalError,
+    isLoading,
+    status,
+    handleChange,
+    handleSubmit,
+  } = useEmailForm({
+    formType: "contact",
     initialValues: {
-      name: '',
-      email: '',
-      inquiryType: '',
-      message: ''
-    }
+      name: "",
+      email: "",
+      inquiryType: "",
+      message: "",
+    },
   });
 
   return (
@@ -34,8 +42,9 @@ export function ContactForm() {
         value={values.name}
         onChange={handleChange}
         error={errors.name}
+        placeholder="Enter your Name"
       />
-      
+
       <Input
         label="Email"
         type="email"
@@ -44,8 +53,9 @@ export function ContactForm() {
         value={values.email}
         onChange={handleChange}
         error={errors.email}
+        placeholder="Enter your email"
       />
-      
+
       <Select
         label="Reason for Contact"
         name="inquiryType"
@@ -55,7 +65,7 @@ export function ContactForm() {
         onChange={handleChange}
         error={errors.inquiryType}
       />
-      
+
       <TextArea
         label="Message"
         name="message"
@@ -64,10 +74,11 @@ export function ContactForm() {
         onChange={handleChange}
         error={errors.message}
         rows={4}
+        placeholder="Enter your message"
       />
-      
-      <FormStatus status={status} error={errors.form} />
-      
+
+      <FormStatus status={status} error={generalError || ""} />
+
       <Button type="submit" isLoading={isLoading}>
         Send Message
       </Button>

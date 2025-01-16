@@ -1,40 +1,40 @@
-import React from 'react';
-import { Users, Briefcase, Award, TrendingUp, Globe } from 'lucide-react';
-import { ImpactCounter } from './ImpactCounter';
+import React from "react";
+import { Users, Briefcase, Award, TrendingUp, Globe } from "lucide-react";
+import { ImpactCounter } from "./ImpactCounter";
 
 const METRICS = [
   {
-    label: 'Projects Delivered',
-    value: 0,
+    label: "Projects Delivered",
+    value: 2,
     icon: Briefcase,
-    description: 'Successful innovations launched globally'
+    description: "Successful innovations launched globally",
   },
   {
-    label: 'Active Developers',
-    value: 10,
+    label: "Active Developers",
+    value: 12,
     icon: Users,
-    description: 'Growing network of skilled professionals'
+    description: "Growing network of skilled professionals",
   },
   {
-    label: 'Client Satisfaction',
+    label: "Client Satisfaction",
     value: 0,
     icon: Award,
-    description: 'Positive feedback from clients',
-    suffix: '%'
+    description: "Positive feedback from clients",
+    suffix: "%",
   },
   {
-    label: 'Growth Rate',
+    label: "Growth Rate",
     value: 0,
     icon: TrendingUp,
-    description: 'Year over year expansion',
-    suffix: '%'
+    description: "Year over year expansion",
+    suffix: "%",
   },
   {
-    label: 'Countries Reached',
-    value: 2,
+    label: "Countries Reached",
+    value: 3,
     icon: Globe,
-    description: 'Global reach and impact'
-  }
+    description: "Global reach and impact",
+  },
 ];
 
 export function ImpactMetrics() {

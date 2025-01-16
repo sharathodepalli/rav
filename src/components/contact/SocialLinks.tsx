@@ -1,10 +1,10 @@
-import React from 'react';
-import { Linkedin, Twitter, Instagram } from 'lucide-react';
+import React from "react";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const SOCIAL_LINKS = [
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Instagram, href: '#', label: 'Instagram' }
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Instagram, href: "#", label: "Instagram" },
 ];
 
 export function SocialLinks() {

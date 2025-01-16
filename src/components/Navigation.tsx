@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Menu, X, Rocket } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X, Rocket } from "lucide-react";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: 'Home', href: '/' },
-    { label: 'Developers', href: '/developers' },
-    { label: 'Innovators', href: '/innovators' },
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/contact' },
+    { label: "Home", href: "/" },
+    { label: "Developers", href: "/developers" },
+    { label: "Innovators", href: "/innovators" },
+    { label: "About", href: "/about" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -18,7 +18,7 @@ export function Navigation() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Rocket className="h-8 w-8 text-primary-600" />
-            <span className="ml-2 text-xl font-bold text-gray-900">RAV</span>
+            <span className="ml-2 text-xl font-bold text-gray-900">Core</span>
           </div>
 
           {/* Desktop Navigation */}
