@@ -36,6 +36,7 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <Input
+      className="px-3 py-1"
         label="Name"
         name="name"
         required
@@ -46,6 +47,7 @@ export function ContactForm() {
       />
 
       <Input
+      className="px-3 py-1"
         label="Email"
         type="email"
         name="email"
@@ -57,6 +59,7 @@ export function ContactForm() {
       />
 
       <Select
+      className="px-3 py-1"
         label="Reason for Contact"
         name="inquiryType"
         required
@@ -67,6 +70,7 @@ export function ContactForm() {
       />
 
       <TextArea
+      className="px-3 py-1"
         label="Message"
         name="message"
         required
