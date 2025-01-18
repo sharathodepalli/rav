@@ -139,20 +139,10 @@ export function DeveloperForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      {/* Inline success or error message */}
-      {formStatus === "success" && (
-        <p className="text-green-500">
-          Your application has been submitted successfully!
-        </p>
-      )}
-      {formStatus === "error" && (
-        <p className="text-red-500">
-          Failed to submit your application. Please try again later.
-        </p>
-      )}
-
+    <form onSubmit={handleSubmit} className="space-y-6 w-full">
+    {/* <span className="text-red-500"> *</span> */}
       <Input
+        className="px-3 py-1 w-full"
         label="Full Name"
         name="fullName"
         required
@@ -163,6 +153,7 @@ export function DeveloperForm() {
         error={errors.fullName}
       />
       <Input
+       className="px-3 py-1"
         label="Email"
         type="email"
         name="email"
@@ -174,6 +165,7 @@ export function DeveloperForm() {
         error={errors.email}
       />
       <Select
+        className="px-3 py-1"
         label="Experience Level"
         name="experienceLevel"
         options={EXPERIENCE_LEVELS}
@@ -182,6 +174,7 @@ export function DeveloperForm() {
         error={errors.experienceLevel}
       />
       <Input
+        className="px-3 py-1"
         label="Portfolio URL"
         type="url"
         name="portfolioUrl"
@@ -215,6 +208,7 @@ export function DeveloperForm() {
         </div>
       </div>
       <TextArea
+        className="px-3 py-1"
         label="Motivation"
         name="motivation"
         required
@@ -236,6 +230,17 @@ export function DeveloperForm() {
       >
         {isLoading ? "Submitting..." : "Submit Application"}
       </Button>
+      {/* Inline success or error message */}
+      {formStatus === "success" && (
+        <p className="text-green-500">
+          Your application has been submitted successfully!
+        </p>
+      )}
+      {formStatus === "error" && (
+        <p className="text-red-500">
+          Failed to submit your application. Please try again later.
+        </p>
+      )}
     </form>
   );
 }

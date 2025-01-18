@@ -19,6 +19,7 @@ export function ProjectDetails({ values, errors, onChange }: ProjectDetailsProps
       icon="Lightbulb"
     >
       <Input
+      className="px-3 py-1"
         label="Project Title"
         name="projectTitle"
         required
@@ -28,6 +29,7 @@ export function ProjectDetails({ values, errors, onChange }: ProjectDetailsProps
         error={errors.projectTitle}
       />
       <TextArea
+      className="px-3 py-1"
         label="Project Description"
         name="projectDescription"
         required
@@ -39,6 +41,7 @@ export function ProjectDetails({ values, errors, onChange }: ProjectDetailsProps
         rows={6}
       />
       <Input
+      className="px-3 py-1"
         type="date"
         label="Expected Deadline"
         name="deadline"
@@ -49,6 +52,7 @@ export function ProjectDetails({ values, errors, onChange }: ProjectDetailsProps
         error={errors.deadline}
       />
       <Select
+        className="px-3 py-1"
         label="Industry/Domain"
         name="industry"
         required
@@ -58,6 +62,7 @@ export function ProjectDetails({ values, errors, onChange }: ProjectDetailsProps
         error={errors.industry}
       />
       <Select
+      className="px-3 py-1"
         label="Project Stage"
         name="projectStage"
         required
@@ -67,6 +72,7 @@ export function ProjectDetails({ values, errors, onChange }: ProjectDetailsProps
         error={errors.projectStage}
       />
       <Input
+      className="px-3 py-1"
         type="number"
         label="Budget Estimate (USD)"
         name="budget"

@@ -41,6 +41,7 @@ export function InnovatorForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6 animate-fade-in">
       <Input
+        className="px-3 py-1"
         label="Full Name"
         name="fullName"
         required
@@ -50,6 +51,7 @@ export function InnovatorForm() {
         error={errors.fullName}
       />
       <Input
+      className="px-3 py-1"
         label="Email"
         type="email"
         name="email"
@@ -60,6 +62,7 @@ export function InnovatorForm() {
         error={errors.email}
       />
       <Input
+      className="px-3 py-1"
         label="Project Title"
         name="projectTitle"
         required
@@ -69,6 +72,7 @@ export function InnovatorForm() {
         error={errors.projectTitle}
       />
       <TextArea
+      className="px-3 py-1"
         label="Project Description"
         name="projectDescription"
         required

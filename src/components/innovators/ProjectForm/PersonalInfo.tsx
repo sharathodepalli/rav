@@ -17,6 +17,7 @@ export function PersonalInfo({ values, errors, onChange }: PersonalInfoProps) {
       icon="User"
     >
       <Input
+      className="px-3 py-1"
         label="Full Name"
         name="fullName"
         required
@@ -26,6 +27,7 @@ export function PersonalInfo({ values, errors, onChange }: PersonalInfoProps) {
         error={errors.fullName}
       />
       <Input
+      className="px-3 py-1"
         label="Email"
         type="email"
         name="email"
