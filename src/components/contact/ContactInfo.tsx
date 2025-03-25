@@ -6,7 +6,7 @@ const OFFICE_HOURS = [
   { days: "Saturday - Sunday", hours: "Closed" },
 ];
 
-const DEPARTMENTS = [{ name: "Support", phone: "+1 (513) 859-6812" }];
+const DEPARTMENTS = [{ name: "Support", phone: "+1 (555) 555-5555" }];
 
 export function ContactInfo() {
   return (
@@ -16,7 +16,7 @@ export function ContactInfo() {
         <div>
           <h3 className="font-medium text-gray-900">Office Location</h3>
           <p className="text-gray-600"></p>
-          <p className="text-gray-600">Cincinnati, OH </p>
+          <p className="text-gray-600">123 Innovation Street, any town, USA </p>
         </div>
       </div>
 

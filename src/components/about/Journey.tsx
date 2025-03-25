@@ -27,10 +27,22 @@ const MILESTONES = [
       "Developed a simple local news website to aggregate and display relevant, real-time news content in an easily digestible format. The project focused on clean design, mobile responsiveness, and ensuring quick access to local stories, laying the foundation for exploring content management systems and backend integrations for future applications.",
   },
   {
-    year: "2025",
-    title: "First Hackathon Participation",
+    year: "Feb 2025",
+    title: "First Hackathon Participation together",
     description:
       "Participated in our first hackathon as a team, collaborating with external developers to build a small-scale project in 48 hours. This experience helped strengthen our team dynamics and foster a creative problem-solving culture.",
+  },
+  {
+    year: "Feb 2025",
+    title: "SwiftDrop Prototype Launched",
+    description:
+      "Built and presented SwiftDrop, a trust-based delivery matching platform, during our first hackathon. The project was successfully developed and showcased within 48 hours, combining user profiles, delivery trust mechanisms, and real-time interactions.",
+  },
+  {
+    year: "Mar 2025",
+    title: "AskLynk Prototype",
+    description:
+      "Started building AskLynk, an AI-powered platform for real-time, anonymous student-professor interactions during lectures. Designed as a browser extension, it enables polls, questions, and discussion to enhance classroom engagement.",
   },
 ];
 

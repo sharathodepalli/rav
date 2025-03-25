@@ -6,7 +6,7 @@ export function Logo() {
   return (
     <div className="flex items-center">
       <SquareStack className="h-8 w-8 text-primary-600" />
-      <span className="ml-2 text-xl font-bold text-gray-900">CORE</span>
+      <span className="ml-2 text-xl font-bold text-gray-900">SHADES</span>
     </div>
   );
 }

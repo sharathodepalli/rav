@@ -5,7 +5,7 @@ import { ImpactCounter } from "./ImpactCounter";
 const METRICS = [
   {
     label: "Projects Delivered",
-    value: 2,
+    value: 6,
     icon: Briefcase,
     description: "Successful innovations launched globally",
   },
