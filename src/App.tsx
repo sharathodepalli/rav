@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/layout/Layout";
-import CustomCursor from "./components/CustomCursor";
+//import CustomCursor from "./components/CustomCursor";
 import { HomePage } from "./pages/HomePage";
 import { DevelopersPage } from "./pages/DevelopersPage";
 import { InnovatorsPage } from "./pages/InnovatorsPage";
@@ -11,7 +11,7 @@ import { ContactPage } from "./pages/ContactPage";
 export default function App() {
   return (
     <BrowserRouter basename="/rav">
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
