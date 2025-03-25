@@ -8,7 +8,10 @@ import "./index.css";
 // Initialize EmailJS with your public key
 emailjs.init({
   publicKey: EMAILJS_CONFIG.publicKey,
-  limitRate: true,
+  limitRate: {
+    throttle: 5000,
+    points: 2,
+  },
 });
 
 createRoot(document.getElementById("root")!).render(

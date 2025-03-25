@@ -10,7 +10,7 @@ import { ContactPage } from "./pages/ContactPage";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/rav">
+    <BrowserRouter basename="/">
       {/* <CustomCursor /> */}
       <Layout>
         <Routes>
