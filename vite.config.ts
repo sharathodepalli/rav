@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/rav/', // Base URL for the app
+  base: '/', // Base URL for the app
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'), // Alias for source directory
