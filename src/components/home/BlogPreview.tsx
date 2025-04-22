@@ -1,21 +1,16 @@
-import React from 'react';
-import { Calendar, Clock } from 'lucide-react';
+import React from "react";
+import { Calendar, Clock } from "lucide-react";
 
 const BLOG_POSTS = [
   {
-    title: 'Coming Soon: The Future of Innovation',
-    excerpt: 'Stay tuned for insights on technology trends and innovation strategies.',
+    title: "Shades Presents: 21-Day FAANG DSA Challenge",
+    excerpt:
+      "We’re thrilled to announce our **21-Day FAANG DSA Challenge**, starting **May 2nd**! Over the next 21 days, we’ll dive into 21 essential coding problems, covering topics like arrays, strings, bit manipulation, and more, commonly asked by top tech companies like Facebook, Amazon, Apple, Netflix, and Google. Whether you’re preparing for interviews or looking to improve your coding skills, this challenge is for you! Join us for 21 days of DSA and let's level up your interview prep!",
     date: new Date().toLocaleDateString(),
-    readTime: '5 min read',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+    readTime: "5 min read",
+    image:
+      "https://images.unsplash.com/photo-1685558593626-686907d7ee4b?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-  {
-    title: 'Coming Soon: Developer Best Practices',
-    excerpt: 'Future articles will cover development tips, tools, and techniques.',
-    date: new Date().toLocaleDateString(),
-    readTime: '4 min read',
-    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
-  }
 ];
 
 export function BlogPreview() {
@@ -24,7 +19,9 @@ export function BlogPreview() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900">Latest Insights</h2>
-          <p className="mt-4 text-xl text-gray-600">Stay tuned for upcoming articles and insights</p>
+          <p className="mt-4 text-xl text-gray-600">
+            Stay tuned for upcoming articles and insights
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

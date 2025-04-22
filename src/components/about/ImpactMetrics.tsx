@@ -17,7 +17,7 @@ const METRICS = [
   },
   {
     label: "Client Satisfaction",
-    value: 0,
+    value: 99,
     icon: Award,
     description: "Positive feedback from clients",
     suffix: "%",
