@@ -1,22 +1,33 @@
-import React from 'react';
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 
 export function SocialLinks() {
   return (
     <div>
-      <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+      <h3 className="text-base font-semibold mb-3 text-white">Follow Us</h3>
       <div className="flex space-x-4">
-        <a href="#" className="text-gray-400 hover:text-white">
-          <Twitter className="h-6 w-6" />
+        <a
+          href="#"
+          className="text-gray-400 hover:text-white transition-colors duration-200"
+        >
+          <Twitter className="h-5 w-5" strokeWidth={1.5} />
         </a>
-        <a href="#" className="text-gray-400 hover:text-white">
-          <Github className="h-6 w-6" />
+        <a
+          href="#"
+          className="text-gray-400 hover:text-white transition-colors duration-200"
+        >
+          <Github className="h-5 w-5" strokeWidth={1.5} />
         </a>
-        <a href="#" className="text-gray-400 hover:text-white">
-          <Linkedin className="h-6 w-6" />
+        <a
+          href="#"
+          className="text-gray-400 hover:text-white transition-colors duration-200"
+        >
+          <Linkedin className="h-5 w-5" strokeWidth={1.5} />
         </a>
-        <a href="#" className="text-gray-400 hover:text-white">
-          <Mail className="h-6 w-6" />
+        <a
+          href="#"
+          className="text-gray-400 hover:text-white transition-colors duration-200"
+        >
+          <Mail className="h-5 w-5" strokeWidth={1.5} />
         </a>
       </div>
     </div>

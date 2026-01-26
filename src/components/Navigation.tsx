@@ -6,9 +6,8 @@ export function Navigation() {
 
   const navItems = [
     { label: "Home", href: "/" },
-    { label: "Developers", href: "/developers" },
-    { label: "Innovators", href: "/innovators" },
-    { label: "About", href: "/about" },
+    { label: "Invoice Automation", href: "/invoice-automation" },
+    { label: "Pricing", href: "/invoice-automation#pricing" },
     { label: "Contact", href: "/contact" },
   ];
 

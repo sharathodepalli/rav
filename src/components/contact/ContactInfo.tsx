@@ -15,7 +15,6 @@ export function ContactInfo() {
         <MapPin className="h-6 w-6 text-primary-600 mt-1" />
         <div>
           <h3 className="font-medium text-gray-900">Office Location</h3>
-          <p className="text-gray-600"></p>
           <p className="text-gray-600">
             850 Euclid Ave, Cleveland, Ohio 44114 US
           </p>

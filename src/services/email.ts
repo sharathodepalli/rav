@@ -38,7 +38,13 @@ export async function sendEmail(data: EmailData): Promise<void> {
     subject: getSubjectLine(data.form_type),
     message: formatMessage(data),
     fullName: data.fullName || data.name || 'Anonymous',
+    name: data.name || data.fullName || 'Anonymous',
+    company: data.company || '',
     email: data.email || 'no-reply@example.com',
+    inquiryType: data.inquiryType || '',
+    invoiceVolume: data.invoiceVolume || '',
+    invoiceSource: data.invoiceSource || '',
+    currentSystem: data.currentSystem || '',
     experienceLevel: data.experienceLevel || '',
     portfolioURL: data.portfolioURL || '',
     skills: Array.isArray(data.skills) ? data.skills.join(', ') : data.skills || '',
@@ -53,7 +59,6 @@ export async function sendEmail(data: EmailData): Promise<void> {
     requiredResources: data.requiredResources || '',
     collaborationMode: data.collaborationMode || '',
     confidentialityAgreement: data.confidentialityAgreement || '',
-    inquiryType: data.inquiryType || '',
   };
 
 
