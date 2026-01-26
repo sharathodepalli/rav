@@ -6,8 +6,8 @@ interface LogoProps {
 
 export function Logo({ isDark = false }: LogoProps) {
   const logoSrc = isDark
-    ? `${import.meta.env.BASE_URL}the_shades_logo_pack-2/Brand/Logo/Primary/the_shades_lockup_white_transparent.png`
-    : `${import.meta.env.BASE_URL}the_shades_logo_pack-2/Brand/Logo/Primary/the_shades_lockup_black_transparent.png`;
+    ? "/the_shades_logo_pack-2/Brand/Logo/Primary/the_shades_lockup_white_transparent.png"
+    : "/the_shades_logo_pack-2/Brand/Logo/Primary/the_shades_lockup_black_transparent.png";
 
   return (
     <Link to="/" className="flex items-center">

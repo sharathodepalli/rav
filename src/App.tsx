@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Layout } from "./components/layout/Layout";
 //import CustomCursor from "./components/CustomCursor";
 import { HomePage } from "./pages/HomePage";
@@ -13,7 +13,7 @@ import { NotFoundPage } from "./pages/NotFoundPage";
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       {/* <CustomCursor /> */}
       <Layout>
         <Routes>
@@ -31,6 +31,6 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
