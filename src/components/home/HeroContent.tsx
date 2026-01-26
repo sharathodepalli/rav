@@ -75,17 +75,21 @@ export function HeroContent() {
         {/* Left column - Content */}
         <div className="text-center lg:text-left">
           {/* Eyebrow */}
-          <p className="text-sm sm:text-base text-primary-300 font-semibold uppercase tracking-wide mb-4 animate-fade-in">
+          <p className="text-sm sm:text-base text-blue-300 font-bold uppercase tracking-wider mb-4 animate-fade-in">
             For Finance & AP Teams Managing 100+ Monthly Invoices
           </p>
 
           {/* Main Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black text-white tracking-tight leading-tight mb-8 animate-slide-up">
-            <span className="block mb-3">Stop Chasing Invoices.</span>
-            <span className="block">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-300 via-blue-300 to-purple-300 animate-gradient drop-shadow-[0_0_30px_rgba(99,102,241,0.5)]">
-                Start Automating.
+            <span className="block mb-2">Invoice Automation</span>
+            <span className="block mb-2">
+              That Actually{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-cyan-300 to-purple-300 animate-gradient drop-shadow-[0_0_30px_rgba(99,102,241,0.5)]">
+                Ships
               </span>
+            </span>
+            <span className="block text-3xl sm:text-4xl lg:text-5xl text-blue-200">
+              10 Days, Not 6 Months
             </span>
           </h1>
 
