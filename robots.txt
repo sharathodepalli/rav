@@ -1,0 +1,14 @@
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://thetrueshades.com/sitemap.xml
+
+# Crawl rate (optional - helps with server load)
+Crawl-delay: 0
+
+# Disallow admin or sensitive routes (if any)
+# User-agent: *
+# Disallow: /admin/
+# Disallow: /api/
