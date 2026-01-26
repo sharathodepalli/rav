@@ -6,8 +6,8 @@ export function TrustSection() {
   const features = [
     {
       icon: Shield,
-      title: "Bank-Level Encryption",
-      text: "AES-256 encryption at rest and TLS 1.3 in transit. Your invoice data is as secure as your online banking.",
+      title: "Encryption in Transit + at Rest",
+      text: "Standard TLS encryption and secure storage protect your invoice data. Details available on request.",
     },
     {
       icon: Lock,
@@ -26,8 +26,8 @@ export function TrustSection() {
     },
     {
       icon: RefreshCw,
-      title: "99.9% Uptime SLA",
-      text: "Automatic retries, failover systems, and real-time monitoring ensure your invoices never get stuck.",
+      title: "High Availability + Monitoring",
+      text: "Retries, alerts, and health checks so invoices don't get stuck. Real-time monitoring keeps processing smooth.",
     },
   ];
 
@@ -79,7 +79,7 @@ export function TrustSection() {
               variant="primary"
               className="px-8 py-3 text-base font-semibold shadow-lg hover:shadow-xl"
             >
-              Book a Free Consultation
+              Book a 10-Min Demo
             </Button>
           </Link>
         </div>

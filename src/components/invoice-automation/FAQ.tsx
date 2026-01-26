@@ -48,6 +48,16 @@ export function FAQ() {
       answer: "Only for exceptions. Clean invoices can go straight through.",
     },
     {
+      question: "Where does the automation run (your environment or ours)?",
+      answer:
+        "By default, the automation runs in our secure cloud environment. For enterprise clients with specific security requirements, we can deploy to your environment (additional setup required).",
+    },
+    {
+      question: "Do you offer ongoing support after go-live?",
+      answer:
+        "Yes. Ongoing support is optional and includes monitoring, tuning, vendor format updates, and priority assistance. Pricing starts at $500/month depending on volume and complexity.",
+    },
+    {
       question: "What do you need to start?",
       answer:
         "Share 10–20 sample invoices (with sensitive data removed if needed) and we map the workflow.",

@@ -3,12 +3,12 @@ export function WhatWeAutomate() {
     {
       num: "01",
       title: "Email Intake",
-      desc: "Invoices arrive by email. We capture them automatically—every format, every vendor.",
+      desc: "Invoices arrive by email. We capture them automatically—most formats across most vendors.",
     },
     {
       num: "02",
       title: "AI Extraction",
-      desc: "Extract all fields with 99%+ accuracy. No templates needed. Works day one.",
+      desc: "Extract all fields with 99%+ accuracy. No templates for most invoices. Works day one for common formats.",
     },
     {
       num: "03",
@@ -23,24 +23,31 @@ export function WhatWeAutomate() {
     {
       num: "05",
       title: "ERP Integration",
-      desc: "Push directly to QuickBooks, NetSuite, SAP, or any system you use.",
+      desc: "Exports to ERP via CSV/API. Direct integrations available on request.",
     },
     {
       num: "06",
       title: "Exception Handling",
-      desc: "AI flags issues with context. Your team reviews only what needs attention.",
+      desc: "AI flags issues with context. Your team reviews only what needs attention. Missing PO • Duplicate • Price mismatch • Unapproved vendor.",
     },
   ];
 
   return (
-    <section id="what-we-automate" className="py-24 bg-white">
+    <section id="what-we-automate" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Complete End-to-End Automation
-          </h2>
-          <p className="text-xl text-gray-600">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <p className="text-sm font-semibold text-primary-600 uppercase tracking-wide mb-3">
+            Behind the Scenes
+          </p>
+          <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            Full Workflow Detail
+          </h3>
+          <p className="text-lg text-gray-600 mb-2">
             From inbox to ERP in seconds. Your team only handles exceptions.
+          </p>
+          <p className="text-sm text-gray-500">
+            You'll see exactly where exceptions are caught — and how approvals
+            stay audit-ready.
           </p>
         </div>
 

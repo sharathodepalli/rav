@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Menu, X, Rocket } from "lucide-react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { MobileMenu } from "./MobileMenu";
 import { Logo } from "./Logo";
 import { NavLinks } from "./NavLinks";
+import { Button } from "@/components/ui/Button";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ export function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isHomePage
-          ? "bg-slate-900/60 backdrop-blur-md border-b border-white/10"
+          ? "bg-gradient-to-r from-slate-900/80 to-primary-900/80 backdrop-blur-md border-b border-white/10"
           : "bg-white shadow-md"
       }`}
       role="navigation"
@@ -29,7 +30,21 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Logo isDark={isHomePage} />
-          <NavLinks className="hidden md:flex" isDark={isHomePage} />
+          <div className="hidden md:flex items-center space-x-8">
+            <NavLinks className="flex" isDark={isHomePage} />
+            <Link to="/contact">
+              <Button
+                variant={isHomePage ? "secondary" : "primary"}
+                className={`px-6 py-2 text-sm font-semibold ${
+                  isHomePage
+                    ? "bg-white text-primary-600 hover:bg-gray-100"
+                    : "bg-primary-600 text-white hover:bg-primary-700"
+                }`}
+              >
+                Book Demo
+              </Button>
+            </Link>
+          </div>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className={`md:hidden ${

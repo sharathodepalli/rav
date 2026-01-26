@@ -44,8 +44,11 @@ export function Pricing() {
           <h2 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-4">
             Transparent Pricing
           </h2>
-          <p className="text-xl text-gray-600">
-            One-time implementation fee. No surprises.
+          <p className="text-xl text-gray-600 mb-1">
+            One-time implementation fee. Optional monthly support.
+          </p>
+          <p className="text-base text-gray-500">
+            No surprises. All tiers include 10-day delivery.
           </p>
         </div>
 
@@ -89,9 +92,12 @@ export function Pricing() {
         </div>
 
         <div className="mt-10 text-center">
-          <p className="text-gray-600 text-base max-w-2xl mx-auto">
-            Final price depends on invoice volume, number of formats/vendors,
-            and integration needs. All tiers include 10-day delivery.
+          <p className="text-sm text-gray-500 max-w-3xl mx-auto mb-4 italic">
+            Pricing depends on invoice volume, vendor formats, approval
+            complexity, and ERP/export needs.
+          </p>
+          <p className="text-primary-600 font-semibold text-lg">
+            Fixed sprint pricing. Ongoing support optional.
           </p>
         </div>
       </div>

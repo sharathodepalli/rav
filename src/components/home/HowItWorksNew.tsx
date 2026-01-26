@@ -17,18 +17,18 @@ export function HowItWorksNew() {
       number: "01",
       title: "Automatic Capture",
       description:
-        "Invoices arrive via email or SharePoint. Our system instantly captures every PDF, image, and attachment—no forwarding, no uploading, no data entry.",
-      metric: "100%",
-      metricLabel: "Capture Rate",
+        "Invoices arrive via email or SharePoint. Our system captures PDFs, images, and attachments—no forwarding, no uploading, no manual entry.",
+      metric: "99%+",
+      metricLabel: "Capture (typical)",
     },
     {
       icon: Search,
       number: "02",
       title: "AI Extraction & Validation",
       description:
-        "Advanced AI reads vendor names, amounts, dates, PO numbers, and line items. Automatically validates business rules, catches duplicates, and performs 3-way matching.",
+        "Advanced AI reads vendor names, amounts, dates, PO numbers, and line items. Automatically validates business rules, catches duplicates, and performs PO matching (as needed).",
       metric: "99%+",
-      metricLabel: "Accuracy",
+      metricLabel: "Accuracy (typical)",
     },
     {
       icon: CheckCircle,
@@ -37,14 +37,14 @@ export function HowItWorksNew() {
       description:
         "Only flagged exceptions need human attention. Clean invoices flow straight to your ERP via API or CSV—approved, coded, and ready for payment.",
       metric: "80%",
-      metricLabel: "Auto-Approved",
+      metricLabel: "Auto-approved (with rules/PO)",
     },
   ];
 
   return (
     <section
       id="how-it-works"
-      className="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
+      className="py-32 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden"
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-30 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:3rem_3rem]"></div>
@@ -60,7 +60,8 @@ export function HowItWorksNew() {
             From Email to ERP in 3 Steps
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Battle-tested workflow processing thousands of invoices daily
+            Built for real AP teams — with approvals, exceptions, and audit
+            trail
           </p>
         </div>
 
@@ -76,7 +77,7 @@ export function HowItWorksNew() {
                 )}
 
                 {/* Card */}
-                <div className="relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-primary-300 group h-full">
+                <div className="relative bg-white rounded-2xl p-6 shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.12)] transition-all duration-300 border border-gray-200 hover:border-primary-300 group h-full">
                   {/* Icon & Number */}
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-14 h-14 bg-gradient-to-br from-primary-600 to-blue-600 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
@@ -113,7 +114,7 @@ export function HowItWorksNew() {
         </div>
 
         {/* Timeline Stats */}
-        <div className="bg-gradient-to-br from-slate-900 to-primary-900 rounded-2xl p-8 mb-12 relative overflow-hidden">
+        <div className="bg-gradient-to-br from-slate-950 to-primary-950 rounded-2xl p-8 mb-12 relative overflow-hidden border border-gray-800 shadow-2xl">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:2rem_2rem]"></div>
 
           <div className="relative grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -124,9 +125,9 @@ export function HowItWorksNew() {
                   Processing Time
                 </span>
               </div>
-              <div className="text-5xl font-black text-white mb-1">60s</div>
-              <p className="text-gray-400 text-sm">
-                Per invoice, fully automated
+              <div className="text-5xl font-black text-white mb-1">~60s</div>
+              <p className="text-gray-300 text-sm font-medium">
+                Avg per invoice (PDF invoices)
               </p>
             </div>
 
@@ -138,7 +139,9 @@ export function HowItWorksNew() {
                 </span>
               </div>
               <div className="text-5xl font-black text-white mb-1">80%</div>
-              <p className="text-gray-400 text-sm">Never touch human hands</p>
+              <p className="text-gray-300 text-sm font-medium">
+                Never touch human hands
+              </p>
             </div>
 
             <div className="flex flex-col items-center">
@@ -148,25 +151,43 @@ export function HowItWorksNew() {
                   Time Saved
                 </span>
               </div>
-              <div className="text-5xl font-black text-white mb-1">15h</div>
-              <p className="text-gray-400 text-sm">Per week, per AP person</p>
+              <div className="text-5xl font-black text-white mb-1">
+                Up to 15h
+              </div>
+              <p className="text-gray-300 text-sm font-medium">
+                Per week, per AP person
+              </p>
             </div>
           </div>
         </div>
 
         {/* CTA */}
         <div className="text-center">
-          <Link to="/invoice-automation#pricing">
-            <Button
-              variant="primary"
-              className="px-10 py-4 text-lg font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
-            >
-              See Pricing & Timeline
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
+          <p className="text-sm text-gray-600 mb-6 font-medium">
+            Works with Email + SharePoint + PDFs • Exports to ERP via CSV/API
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to="/contact">
+              <Button
+                variant="primary"
+                className="px-10 py-4 text-lg font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
+              >
+                Book a 10-Min Demo
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link to="/invoice-automation#pricing">
+              <Button
+                variant="outline"
+                className="px-10 py-4 text-lg font-semibold border-2 hover:bg-gray-50 transition-all duration-300"
+              >
+                See Pricing & Timeline
+              </Button>
+            </Link>
+          </div>
           <p className="mt-4 text-sm text-gray-500">
-            Free consultation • No credit card required
+            Includes audit trail + exception handling • Human-in-the-loop for
+            exceptions
           </p>
         </div>
       </div>

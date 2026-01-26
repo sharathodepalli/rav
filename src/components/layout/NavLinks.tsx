@@ -59,21 +59,33 @@ export function NavLinks({
         className,
       )}
     >
-      {links.map((link) => (
-        <Link
-          key={link.href}
-          to={link.href}
-          onClick={(e) => handleClick(e, link.href)}
-          className={cn(
-            isDark
-              ? "text-white/90 hover:text-white transition-colors"
-              : "text-gray-600 hover:text-primary-600 transition-colors",
-            vertical && "block px-3 py-2",
-          )}
-        >
-          {link.label}
-        </Link>
-      ))}
+      {links.map((link) => {
+        // Extract path without hash for comparison
+        const linkPath = link.href.split("#")[0];
+        const isActive = location.pathname === linkPath;
+
+        return (
+          <Link
+            key={link.href}
+            to={link.href}
+            onClick={(e) => handleClick(e, link.href)}
+            className={cn(
+              "font-medium text-[15px]",
+              isActive && !isDark && "text-primary-600",
+              isActive && isDark && "text-white",
+              !isActive &&
+                isDark &&
+                "text-white/90 hover:text-white transition-colors",
+              !isActive &&
+                !isDark &&
+                "text-gray-700 hover:text-primary-600 transition-colors",
+              vertical && "block px-3 py-2",
+            )}
+          >
+            {link.label}
+          </Link>
+        );
+      })}
     </div>
   );
 }
